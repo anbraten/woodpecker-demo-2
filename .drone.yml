@@ -4,3 +4,8 @@ pipeline:
     commands:
       - echo test
       - sleep 5
+      - echo test1
+      - sleep 5
+      - echo test2
+      - sleep 1m
+      - echo end
