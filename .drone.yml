@@ -9,3 +9,7 @@ pipeline:
       - echo test2
       - sleep 1m
       - echo end
+      - sleep 5
+      - echo more checks
+      - sleep 10
+      - echo tada
