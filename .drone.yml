@@ -13,3 +13,20 @@ pipeline:
       - echo more checks
       - sleep 10
       - echo tada
+  trouble:
+    image: debian:stable-slim
+    commands:
+      - echo trouble
+      - sleep 5
+      - echo maker
+      - sleep 5
+      - echo has some
+      - sleep 1m
+      - echo fun
+      - sleep 5
+      - echo with colors.
+      - sleep 10
+      - RED='\033[0;31m'
+      - NC='\033[0m' # No Color
+      - echo -e "I ${RED}love${NC} colors"
+      - exit -2
