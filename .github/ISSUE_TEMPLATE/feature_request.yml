@@ -18,7 +18,7 @@ body:
     id: suggested-solution
     attributes:
       label: Suggested solution
-      description: "In module [xy] we could provide following functionallity..."
+      description: "In web-ui / config we could provide following functionality..."
     validations:
       required: true
   - type: textarea
@@ -39,7 +39,7 @@ body:
       options:
         - label: Read the [Contributing Guidelines](https://github.com/woodpecker-ci/woodpecker/blob/master/CONTRIBUTING.md).
           required: true
-        - label: Read the [docs](https://woodpecker-ci.github.io/).
+        - label: Read the [docs](https://probable-stop.surge.sh/docs/intro).
           required: true
         - label: Check that there isn't already an [issue](https://github.com/woodpecker-ci/woodpecker/issues?q=is%3Aopen++label%3Afeature%2Cenhancement+) that request the same feature to avoid creating a duplicate.
           required: true
