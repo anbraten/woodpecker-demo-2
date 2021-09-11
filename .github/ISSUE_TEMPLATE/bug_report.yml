@@ -61,7 +61,7 @@ body:
         #   required: true
         - label: Read the [Contributing Guidelines](https://github.com/woodpecker-ci/woodpecker/blob/master/CONTRIBUTING.md).
           required: true
-        - label: Read the [docs](https://probable-stop.surge.sh/docs/intro).
+        - label: Read the [docs](https://woodpecker-ci.github.io/docs/intro).
           required: true
         - label: Check that there isn't [already an issue](https://github.com/woodpecker-ci/woodpecker/issues?q=is%3Aopen+is%3Aissue+label%3Abug) that reports the same bug to avoid creating a duplicate.
           required: true
