@@ -1,12 +1,25 @@
 # Credits to: https://github.com/vitejs/vite/blob/main/.github/ISSUE_TEMPLATE/bug_report.yml
 name: "\U0001F41E Bug report"
-description: Report an issue with Vite
-labels: [pending triage]
+description: Report an issue with Woodpecker
+labels: ["pending triage"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component of Woodpecker is affected by the issue?
+      multiple: true
+      options:
+        - server
+        - agent
+        - cli
+        - web-ui
+    validations:
+      required: true
   - type: textarea
     id: bug-description
     attributes:
@@ -16,20 +29,12 @@ body:
     validations:
       required: true
   - type: textarea
-    id: reproduction
-    attributes:
-      label: Reproduction
-      description: Please provide a link to a repo that can reproduce the problem you ran into. A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is required unless you are absolutely sure that the issue is obvious and the provided information is enough to understand the problem. If a report is vague (e.g. just a generic error message) and has no reproduction, it will receive a "need reproduction" label. If no reproduction is provided after 3 days, it will be auto-closed.
-      placeholder: Reproduction
-    validations:
-      required: true
-  - type: textarea
     id: system-info
     attributes:
       label: System Info
-      description: Output of `npx envinfo --system --npmPackages vite,@vitejs/plugin-vue --binaries --browsers`
+      description: Output of `https://<your-woodpecker-instance>/version`
       render: shell
-      placeholder: System, Binaries, Browsers
+      placeholder: Version info, docker-compose config, Kubernetes manifests
     validations:
       required: true
   - type: dropdown
