@@ -1,0 +1,7 @@
+pipeline:
+  test:
+    image: 
+    commands:
+      - echo test
+      - chmod +x ./counter.sh
+      - ./counter.sh
