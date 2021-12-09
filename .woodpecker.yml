@@ -1,6 +1,6 @@
 pipeline:
   test:
-    image: 
+    image: debian:stable-slim
     commands:
       - echo test
       - chmod +x ./counter.sh
