@@ -7,6 +7,5 @@ pipeline:
       - chmod +x ./counter.sh
       - ./counter.sh
     secrets:
-      - demo
       - source: gitea_token
         target: plugin_gitea_token
