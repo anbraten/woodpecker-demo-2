@@ -3,6 +3,8 @@ pipeline:
     image: debian:stable-slim
     commands:
       - env | grep GITEA
+      - echo "####"
+      - env
     secrets:
       - source: gitea_token
         target: plugin_gitea_token
