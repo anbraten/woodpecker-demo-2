@@ -2,6 +2,11 @@ pipeline:
   test:
     image: debian:stable-slim
     commands:
+      - env
       - echo test
       - chmod +x ./counter.sh
       - ./counter.sh
+    secrets:
+      - demo
+      - source: gitea_token
+        target: plugin_gitea_token
